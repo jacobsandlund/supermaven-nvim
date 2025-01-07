@@ -61,8 +61,6 @@ M.setup = function(args)
   end
 
   if first_time_setup then
-    first_time_setup = false
-
     commands.setup()
 
     local cmp_ok, cmp = pcall(require, "cmp")
@@ -78,6 +76,8 @@ M.setup = function(args)
     end
 
     api.start()
+
+    first_time_setup = false
   end
 end
 
