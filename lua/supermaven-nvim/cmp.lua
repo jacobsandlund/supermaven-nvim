@@ -84,6 +84,7 @@ function source.complete(self, params, callback)
   local items = {
     {
       label = label,
+      word = completion_text,
       kind = 1,
       score = 100,
       filterText = nil,
