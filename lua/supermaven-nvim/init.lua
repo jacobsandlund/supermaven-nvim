@@ -9,7 +9,6 @@ local M = {}
 local first_time_setup = true
 
 M.setup = function(args)
-
   -- Remove old keymaps
   if not first_time_setup and not config.disable_inline_completion and not config.disable_keymaps then
     if config.keymaps.accept_suggestion ~= nil then
@@ -75,6 +74,7 @@ M.setup = function(args)
       end
     end
 
+    vim.notify("supermaven: init + start")
     api.start()
 
     first_time_setup = false
