@@ -74,7 +74,6 @@ M.setup = function(args)
       end
     end
 
-    vim.notify("supermaven: init + start")
     api.start()
 
     first_time_setup = false
